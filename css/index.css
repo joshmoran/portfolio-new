@@ -1,0 +1,514 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#container .contentRow {
+  min-width: 100% !important;
+  margin: 0 auto;
+  top: 20vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HTML Selectors */
+.clickable {
+  text-decoration: none;
+  margin: 0.5em; 
+  padding: 0.5em; 
+  border-radius: 10px; 
+  color: white; 
+  background-color: #891652; 
+  border: 1px solid whitesmoke; 
+}
+
+/* a:hover {
+  background-color: #EABDD8;
+  color: #240a34;
+  --webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 1px solid #000;
+
+} */
+
+p {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+br {
+  height: 20px;
+  background-color: black;;
+}
+
+hr {
+  width: 2em;
+  background-color: purple;
+}
+
+h2 + p, p + p {
+  text-align: justify;
+}
+
+strong {
+  font-weight: 900;
+  color: slategrey;
+  /* border: 10px solid black./; */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+/* Some Rows */
+.parallax {
+  background-image: url('/img/endless-constellation.svg');
+  height: 100% !important; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* All Rows */
+
+.row {
+  /* width: 700px; */
+  /* margin: 1em; */
+}
+
+/* Article 1 */
+#article1 {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+#intro {
+  width: 80%;
+  max-width: 30em;
+  height: fit-content;
+  color: white;
+  background-color: rgba(36, 10, 52, 0.90);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15rem auto 10rem auto;
+  padding: 2rem 0;
+  border: 2px solid white;
+  border-radius: 25px;
+  --webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  background-size: 50px;
+}
+
+#intro #left, #intro #right {
+  padding: 0 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#intro #right p, #intro #right a {
+  margin: 2em auto;
+  text-align: center;
+
+}
+
+.profilePhoto  {
+  width: 10vw;
+  height: auto;
+  border-radius: 25px;
+}
+/* Article 2 */
+
+#article2 {
+  background-color: darkred
+}
+
+#article2 h1 {
+  text-align: center;
+  margin: 1em;
+  text-decoration: underline;
+
+}
+
+
+.itemProject > *{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5em auto;
+  padding: 0.5em;
+}
+#projects {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr;
+}
+
+#projects > * {
+  width: 80%;
+  margin: 0.75em auto;
+  box-sizing: conten-box;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+#projects img {
+  width: 100%;
+  height: auto;
+  border: 1px solid purple
+}
+
+#projects h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.projectLinks a {
+  margin: 0.5em auto;
+  text-align: center;
+  font-size: smaller;
+  height: auto;
+}
+
+.seeMore {
+  margin: 1em auto 2em auto !important;
+  height: auto;
+  width:  fit-content;
+  text-align: center;
+}
+
+/* Article 3 */
+#article3 {
+  
+  color: white;
+}
+
+#article3 h2:first-child {
+  text-align: center
+}
+
+.heading {
+  margin: 1em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+#article3content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0.5em 1em;
+  /* align-content: center; */
+  align-items: center;
+}
+
+.logoContainer img {
+  width: 50px;
+  height: auto;
+  justify-content: center;
+  background-color: darkgray;
+  padding: 0.25em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.logoContainer div:first-child {
+  /* height: 180px; */
+}
+
+.qualifications {
+  width: 150px !important;
+  height: auto !important;
+}
+
+.logoDiv {
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Article 4 */
+
+
+h3, input[type=submit] {
+  text-align: center;
+}
+
+.contactLinks {
+  display: grid;
+  margin: 0.25 auto;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  width: 80%;
+}
+
+.contactLinks a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactLinks a img {
+  background-color: black;
+  height: 2em;
+  padding: 0.25em;
+  width: 2em;
+
+}
+
+.contactLinks li {
+  color: black;
+} 
+
+#contactForm, form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#formContent {
+  width: 100%;
+}
+
+
+
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#formRight {
+  width: 60%;
+}
+
+label,input, textarea {
+  min-width: 40%;
+  margin: 0.5em 0.5em;
+}
+
+textarea {
+  height: 15em;
+}
+
+input:focus, textarea:focus {
+  border: 5px solid #891652;
+  background-color: lightcyan;
+  color: #000;
+}
+
+input[type=submit] {
+  padding: 0.5em;
+  width: 60%;
+  /* margin: 1em auto 2em auto; */
+  background-color: #891652;
+  color: #fff;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #EABDD8;
+  color: #240a34;
+  --webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 1px solid #000;
+}
+a:hover {
+  --webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+#formContent {
+  justify-content: center;
+  display: flex
+}
+
+#formLeft { 
+  place-self: flex-start;
+}
+
+.contactLinks li { 
+  display: flex !important; 
+  justify-content: space-between;
+}
+
+#messageSent {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  background-color: lightgreen;
+  color: #000;
+  padding: 10px;
+}
+
+.contactLinks li span {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#formRight, #formLeft {
+  flex-direction: column;
+}
+@media (max-width: 650px) {
+  #container  {
+      display: flexbox !important;
+      max-width: 100% !important;
+      flex-direction: row !important;
+      flex-grow: inherit !important;
+      flex-grow: initial;
+      flex-wrap: wrap;
+  }
+
+  #container #left, #container #right{
+      width: fit-content;
+  }
+}
+
+@media (min-width: 767px) {
+  #left, #right {
+      /* width: 50%; */
+  
+  }
+  
+} 
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-12-16 10:38:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- *
+
+ *
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+ @-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 2fr));
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #projects {
+    display: grid;
+    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 2fr));
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
