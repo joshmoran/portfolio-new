@@ -124,8 +124,8 @@ if ( !isset( $_GET['message']) ) {
                         </div>
                         <div class="projectLinks">
                             <a class="clickable" href="projects/angela/base/index.php" target="_blank">View Project</a>
-                            <a class="clickable" href="projects/angela/docs/moredetails.php">More Information</a>
-                            <a class="clickable" href="https://github.com/joshmoran/angeleas_website/" target="_black">View on GitHub</a>
+                            <a class="clickable" href="projects/angela/docs/moredetails.php" target="_blank">More Information</a>
+                            <a class="clickable" href="https://github.com/joshmoran/angeleas_website/" target="_blank">View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -324,10 +324,10 @@ if ( !isset( $_GET['message']) ) {
 <h2>Contact Methods</h2>
 <div id="contactMethod">
 <ul class="contactLinks">
-    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>Email: </span><img src="/img/footer/pngkey.com-mail-white-png-4297053.png" alt="Contact Me By Email" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" alt="Contact Me By GitHub" /></a></li>
-    <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" alt="Contact Me By TeamTreehouse" /></a></li>
-    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" alt="Contact Me By LinkedIn" /></a></li>
+    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>Email: </span><img src="/img/footer/pngkey.com-mail-white-png-4297053.png" alt="Contact Me By Email" class="contactMethod"></a></li>
+    <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" alt="Contact Me By GitHub"></a></li>
+    <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" alt="Contact Me By TeamTreehouse"></a></li>
+    <li><a class="contactClickable" href="www.linkedin.com/in/joshua-kelly-92a321310" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" alt="Contact Me By LinkedIn"></a></li>
     <!-- <li><a class="contactClickable" href="https://www.codecademy.com/profiles/method7207366434" target="_blank"><span>CodeAcademy: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li> -->
 </ul>
 </div>
@@ -341,7 +341,7 @@ if ( !isset( $_GET['message']) ) {
     }
 ?>
 <form action="index.php" method="POST" >
-    <div id="formContent"class="flex row">
+    <div id="formContent" class="flex row">
     <div id="formLeft" class="flex column">
         <label for="name">Name</label>
         <label for="email">Email</label>
