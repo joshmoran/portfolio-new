@@ -4,10 +4,6 @@
     margin: 13rem auto 2rem auto;
 }
 
-* { 
-    /* text-align: left; */
-    
-}
 
 #container h2
 {
@@ -95,6 +91,10 @@ span {
 .row {
         display: flex;
     flex-direction: row;
+}
+
+.itemProject > * {
+    box-sizing: border-box;
 }
 
 /* ----------------------------------------------

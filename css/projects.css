@@ -28,6 +28,11 @@
     border-radius: 10px;
 }
 
+.itemProject * {
+    padding: 0;
+    margin: 0;
+}
+
 .itemProject > div {
     width: 100%;
 }
@@ -46,8 +51,8 @@
 #right
 {
     /* width: 40%; */
-    margin: 0.5em;
-    padding: 1%;
+    margin: 0.5em auto;
+    /* padding: 1%; */
 }
 
 #left {  
@@ -102,16 +107,18 @@ h1, h2 {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 1em auto;
 }
 
 .projectLinks a {
     margin: 0.5em auto;
     text-align: center;
     margin: 0.5em;
-    width: 100%;
+    width: 90%;
 }
 
 #container h1:first-child {
+    font-size: 2rem;
     text-align: center;
 }
 

@@ -10,6 +10,7 @@
 
 #left img {
     border: 1px solid white;
+    box-sizing: border-box;
 }
 .flex {
     display: flex;
@@ -29,7 +30,7 @@ body {
     display: fixed;
     /* background-color: #000; */
     background-size: 100%;
-    background-image: url(../img/endless-constellation.svg);
+    background-image: url(../img/mesh/4.svg);
     min-height: 100vh;
     display: flex;
     background-attachment: fixed;

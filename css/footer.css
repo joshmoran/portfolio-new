@@ -26,12 +26,14 @@
     text-align: justify;
     width: max-content;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .contactMethod
 {
-    width: 2em !important;
-    height: 2em !important;
+    width: 3em !important;
+    height: auto !important;
 }
 
 .contact {
@@ -47,3 +49,8 @@
     display: inline-block;
 }
 
+#footer li a {
+    height: 100%;
+    width: 100%;
+
+}

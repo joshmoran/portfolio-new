@@ -46,6 +46,7 @@ if ( !isset( $_GET['message']) ) {
                 </div>
                 <div class="right">
                     <h2>Front and Backend Developer</h2>
+                    <p>Some more text </p>
                     <p>Helping clients <span>develop</span>, <span>build</span> and <span>deploy</span> your digital products</p>
                     <a class="cvLink clickable" href="src/cv.pdf" target="_parent">Download My CV</a>
                     <a class="contactMe clickable" href="#article4" target="_parent">Contact Me</a>
@@ -125,7 +126,8 @@ if ( !isset( $_GET['message']) ) {
                         <div class="projectLinks">
                             <a class="clickable" href="projects/angela/base/index.php" target="_blank">View Project</a>
                             <a class="clickable" href="projects/angela/docs/moredetails.php" target="_blank">More Information</a>
-                            <a class="clickable" href="https://github.com/joshmoran/angeleas_website/" target="_blank">View on GitHub</a>
+                            <a class="clickable" href="https://github.com/joshmoran/angeleas_website/
+                            " target="_blank">View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +139,7 @@ if ( !isset( $_GET['message']) ) {
         <div class="contentRow parallax" id="article3">
             <div id="article3content">
             <h2 class="heading">Introduction</h2>
-            <p>I am a very hard working and dedicated individual. I have had a passion for computers since I was a child, taking apart broken electronics to see how they functions. To building, servicing and repairing computers for my family and friends during my teenage years. For the last five, I have been expanding my knowledge to the back-end of web-servers. Integrating and hosting different servers, from a simple WebDAV protocol file viewer to an email server.</p>
+            <!-- <p>I am a very hard working and dedicated individual. I have had a passion for computers since I was a child, taking apart broken electronics to see how they functions. To building, servicing and repairing computers for my family and friends during my teenage years. For the last five, I have been expanding my knowledge to the back-end of web-servers. Integrating and hosting different servers, from a simple WebDAV protocol file viewer to an email server.</p> -->
             <p>I am a passionate and dedicated developer with experience with front and back end developer technologies. I have developed a broad and extensive library of knowledge helping me develop websites and web applications for my clients.</p> 
             <p>The start of my journey started as a child taking apart broken electronics, progressing into diagnosing and repairing hardware and software faults. Expanding into system administration using advanced Linux applications such as Iptables, Fail2Ban, Apache2 Server, PHP8.2-FPM and many others. Combining the knowledge of a network and system technician with my developer knowledge really aids my attention to detail, critical thinking and problem solving and problem analysis.</p>
 
@@ -327,7 +329,7 @@ if ( !isset( $_GET['message']) ) {
     <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>Email: </span><img src="/img/footer/pngkey.com-mail-white-png-4297053.png" alt="Contact Me By Email" class="contactMethod"></a></li>
     <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" alt="Contact Me By GitHub"></a></li>
     <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" alt="Contact Me By TeamTreehouse"></a></li>
-    <li><a class="contactClickable" href="www.linkedin.com/in/joshua-kelly-92a321310" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" alt="Contact Me By LinkedIn"></a></li>
+    <li><a class="contactClickable" href="//www.linkedin.com/in/joshua-kelly-92a321310/" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" alt="Contact Me By LinkedIn"></a></li>
     <!-- <li><a class="contactClickable" href="https://www.codecademy.com/profiles/method7207366434" target="_blank"><span>CodeAcademy: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li> -->
 </ul>
 </div>
