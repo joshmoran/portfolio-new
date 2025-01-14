@@ -14,7 +14,7 @@ if ( $file =='moredetails.php'){
     <div class="flex row" id="headerLeft">
         <h1><img 
         <?php 
-        if ($file == 'index.php' || $file == 'about.php' || $file == 'projects.php' || $file == 'contact.php'  ){
+        if ($file == 'index.php' || $file == 'projects.php' ){
             echo 'src="img/code.png"';
         } else if ($file == 'moredetails.php') {
             echo 'src="../../../img/code.png"';
@@ -24,19 +24,30 @@ if ( $file =='moredetails.php'){
     <nav id="headerRight">
         <div id="links">
             <?php
-            if ($file == 'index.php' || $file == 'about.php' || $file == 'projects.php' || $file == 'contact.php' ){
+            if ($file == 'index.php' || $file == 'projects.php' ){
                 echo '<a target="self" href="index.php">Home</a>';
-                echo '<a target="self" href="projects.php">Projects</a>';
+                echo '<a target="self" href="index.php#article3" id="about">About</a>';
+                echo '<div class="dropdown">';
+                echo '<a target="self" class="dropdownA" href="index.php#article2">Projects</a>';
+                echo '<div class="dropdown-content">';
+                echo '<a target="self" class="dropdownA" href="projects.php">All Projects</a>';
+                echo '</div>';
+                echo '</div>';
                 // echo '<a target="self" href="docs.php">Wiki</a>';
-                echo '<a target="self" href="about.php" id="about">About</a>';
-                echo '<a target="self" href="contact.php" id="contact">Contact</a>';
+                echo '<a target="self" href="index.php#article4" id="contact">Contact</a>';
             } else if ($file == 'moredetails.php') {
                 echo '<a target="self" href="../../../index.php">Home</a>';
-                echo '<a target="self" href="../../../projects.php" id="projects">Projects</a>';
-                // echo '<a target="self" href="../../../docs.php" id="projects">Wiki</a>';
-                echo '<a target="self" href="../../../about.php" id="about">About</a>';
-                echo '<a target="self" href="../../../contact.php" id="contact">Contact</a>';
-                
+                echo '<a target="self" href="../../../index.php#article3" id="about">About</a>';
+                echo '<div class="dropdown">';
+                echo '<a target="self" class="dropdownA" href="../../../index.php#article2">Projects</a>';
+                echo '<div class="dropdown-content">';
+                echo '<a target="self" class="dropdownA" href="../../../projects.php">All Projects</a>';
+                echo '</div>';
+                echo '</div>';
+                // echo '<a target="self" href="docs.php">Wiki</a>';
+                echo '<a target="self" href="../../../index.php#article4" id="contact">Contact</a>';
+
+            
             } else {
 
                 echo '<a target="self" href="../index.php">Home</a>';

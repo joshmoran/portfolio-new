@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   echo mail( $sendTo, $subject, $txt, $headers);
   
-  header( "Location: contact.php?message=sent");
+  header( "Location: index.php?message=sent#article4");
 }
 
 if ( !isset( $_GET['message']) ) {
@@ -22,8 +22,6 @@ if ( !isset( $_GET['message']) ) {
     $error_message = 'Message sent!';
   }
 }
-
-echo $_GET['message']
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +29,7 @@ echo $_GET['message']
     <meta charset="utf-8">
     <title>Josh Kelly's Portfolio</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" type="text/css" href="css/universal.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/universal.css" /> -->
     
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
@@ -51,6 +49,7 @@ echo $_GET['message']
                     <h2>Front and Backend Developer</h2>
                     <p>Helping clients <span>develop</span>, <span>build</span> and <span>deploy</span> your digital products</p>
                     <a class="cvLink clickable" href="src/cv.pdf" target="_parent">Download My CV</a>
+                    <a class="contactMe clickable" href="#article4" target="_parent">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -63,10 +62,12 @@ echo $_GET['message']
                         <img src="img/ticket_system.png" class="projectsImg" alt="" />
                     </div>
                     <div id="right">
-                        <h2>Ticket System</h2>
-                        <p>A website designed for managing, organizing and resolving tickets.</p>
-                        <p><strong>Front-EndLanguages: </strong><br> ReactJS, CSS and JavaScript</p>
-                        <p><strong>Backend Languages: </strong><br> NodeJS (API) and SQL (Data)</p>
+                        <div class="projectInfo">
+                            <h2>Ticket System</h2>
+                            <p>A website designed for managing, organizing and resolving tickets.</p>
+                            <p><strong>Front-EndLanguages: </strong><br> ReactJS, CSS and JavaScript</p>
+                            <p><strong>Backend Languages: </strong><br> NodeJS (API) and SQL (Data)</p>
+                        </div>
                         <p><strong>Progress: </strong><br> Completed</p>
                         <div class="projectLinks">
                             <a class="clickable" href="projects/ticket_system/docs/moredetails.php">More Information</a>
@@ -80,10 +81,12 @@ echo $_GET['message']
                         <img src="img/todo_flask.png" class="projectsImg" alt="" />
                     </div>
                     <div id="right">
-                        <h2>ToDo List</h2>
-                        <p>A simple task management system.</p>
-                        <p><strong>Languages: </strong><br> Python, Flask, HTML, CSS, JavaScript and SQL</p>
-                        <p><strong>Progress: </strong><br> Completed</p>
+                        <div class="projectInfo">
+                            <h2>ToDo List</h2>
+                            <p>A simple task management system.</p>
+                            <p><strong>Languages: </strong><br> Python, Flask, HTML, CSS, JavaScript and SQL</p>
+                            <p><strong>Progress: </strong><br> Completed</p>
+                        </div>
                         <div class="projectLinks">
                             <a class="clickable" href="https://todo-flask-z4xg.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
                             <a class="clickable" href="projects/todo_flask/docs/moredetails.php">More Information</a>
@@ -96,10 +99,12 @@ echo $_GET['message']
                         <img src="img/claires.png" class="projectsImg" alt="" />
                     </div>
                     <div id="right">
-                        <h2>Cakeaholics by Claire</h2>
-                        <p>A website designed for a local business in the north east england.</p>
-                        <p><strong>Languages: </strong><br> HTML, CSS and JavaScript</p>
-                        <p><strong>Progress: </strong><br> Completed</p>
+                        <div class="projectInfo">
+                            <h2>Cakeaholics by Claire</h2>
+                            <p>A website designed for a local business in the north east england.</p>
+                            <p><strong>Languages: </strong><br> HTML, CSS and JavaScript</p>
+                            <p><strong>Progress: </strong><br> Completed</p>
+                        </div>
                         <div class="projectLinks">
                             <a class="clickable" href="projects/cakeaholicsbyclaire/base/index.php" target="_blank">View Project</a>
                             <a class="clickable" href="projects/cakeaholicsbyclaire/docs/moredetails.php">More Information</a>
@@ -112,10 +117,12 @@ echo $_GET['message']
                         <img src="img/angelas_website.jpg" class="projectsImg" alt="" />
                     </div>
                     <div id="right">
-                        <h2>Angela's Website</h2>
-                        <p>A e-commerce website.</p>
-                        <p><strong>Languages: </strong><br> HTML, CSS, JavaScript, SQL and PHP</p>
-                        <p><strong>Progress: </strong><br> Completed</p>
+                        <div class="projectInfo">
+                            <h2>Angela's Website</h2>
+                            <p>A e-commerce website.</p>
+                            <p><strong>Languages: </strong><br> HTML, CSS, JavaScript, SQL and PHP</p>
+                            <p><strong>Progress: </strong><br> Completed</p>
+                        </div>
                         <div class="projectLinks">
                             <a class="clickable" href="projects/angela/base/index.php" target="_blank">View Project</a>
                             <a class="clickable" href="projects/angela/docs/moredetails.php">More Information</a>
@@ -163,8 +170,16 @@ echo $_GET['message']
                     <h3>ReactJS</h3>
                 </div>
                 <div class="logoContainer">
+                    <img src="img/languages/node.svg" alt="NodeJS Logo" />
+                    <h3>NodeJS</h3>
+                </div>
+                <div class="logoContainer">
                     <img src="img/languages/python.svg" alt="Python Logo" />
                     <h3>Python</h3>
+                </div>
+                <div class="logoContainer">
+                    <img src="img/languages/flask.svg" alt="Flask Logo" />
+                    <h3>Flask</h3>
                 </div>
                 <div class="logoContainer">
                     <img src="img/languages/php.svg" alt="PHP Logo" />
@@ -174,6 +189,11 @@ echo $_GET['message']
                     <img src="img/languages/sql.svg" alt="SQL Logo" />
                     <h3>SQL</h3>
                 </div>
+                <div class="logoContainer">
+                    <img src="img/languages/json.svg" alt="JSON Logo" />
+                    <h3>JSON</h3>
+                </div>
+
             </div>
             <!-- <div class="flex row"> -->
             <!-- 
@@ -258,7 +278,18 @@ echo $_GET['message']
                 <div class="logoContainer">
                     <img src="img/skills/postfix.png" alt="Postfix Logo">
                     <h3>Postfix</h3>
-                
+                </div>
+                <div class="logoContainer">
+                    <img src="img/skills/redis.svg" alt="Redis Logo">
+                    <h3>Redis</h3>
+                </div>
+                <div class="logoContainer">
+                    <img src="img/skills/npm.svg" alt="NPM Logo">
+                    <h3>NPM</h3>
+                </div>
+                <div class="logoContainer">
+                    <img src="img/skills/localai.svg" alt="LocalAI Logo">
+                    <h3>LocalAI</h3>
                 </div>
             </div>
             <!--             
@@ -299,7 +330,7 @@ echo $_GET['message']
     <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" /></a></li>
     <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" /></a></li>
     <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li>
+    <li><a class="contactClickable" href="https://www.codecademy.com/profiles/method7207366434" target="_blank"><span>CodeAcademy: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li>
 </ul>
 </div>
 <div id="contactForm">
@@ -311,7 +342,7 @@ echo $_GET['message']
     echo '</p>';
     }
 ?>
-<form action="contact.php" method="POST" >
+<form action="index.php" method="POST" >
     <div id="formContent"class="flex row">
     <div id="formLeft" class="flex column">
         <label for="name">Name</label>

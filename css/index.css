@@ -1,3 +1,13 @@
+@font-face { 
+  font-family: scree;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: scree, serif;
+  line-height: 1.2;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -25,6 +35,7 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
+  border-top: 2vh solid lightcoral;
 }
 
 /* HTML Selectors */
@@ -66,10 +77,16 @@ h2 + p, p + p {
   text-align: justify;
 }
 
-strong {
-  font-weight: 900;
-  color: slategrey;
+#article2 strong {
+  font-weight: 2000;
+  color: darkslategrey;
   /* border: 10px solid black./; */
+}
+
+#article3 strong {
+  font-weight: 600;
+  color: rgba( 224,224, 224, 1)
+  ;
 }
 
 .flex {
@@ -85,10 +102,12 @@ strong {
 .parallax {
   background-image: url('/img/endless-constellation.svg');
   height: 100% !important; 
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  --webkit-background-origin: border;
 }
 /* All Rows */
 
@@ -142,7 +161,8 @@ strong {
 /* Article 2 */
 
 #article2 {
-  background-color: darkred
+  background: rgb(34,34,34);
+background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(137,22,82,1) 66%);
 }
 
 #article2 h1 {
@@ -153,13 +173,25 @@ strong {
 }
 
 
-.itemProject > *{
-  background-color: white;
+.itemProject >  *{
+  /* background-color: white; */
   display: flex;
+  height: fit-content;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0.5em auto;
-  padding: 0.5em;
+  justify-content: center;
+  margin: 0.25em auto;
+  padding: 0.25em;
+  /* backdrop-filter: blur( 2px );
+  box-shadow: none; */
+  /* background: rgba( 224,224, 224, 0.5 ); */
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  /* backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px ); */
+  border-radius: 10px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  
+  /* -webkit-backdrop-filter: blur( 2px ); */
+  /* border-radius: 10px; */
 }
 #projects {
   display: grid;
@@ -167,13 +199,31 @@ strong {
   grid-template-columns: 1fr;
 }
 
+#projects #right {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projectInfo, .projectLinks {
+  width: 100%;
+}
+
 #projects > * {
-  width: 80%;
+  width: 90%;
+  height: fit-content;
   margin: 0.75em auto;
-  box-sizing: conten-box;
-  background-color: white;
-  border: 1px solid black;
-  padding: 1em;
+  box-sizing: content-box;
+  background: rgba( 224,224, 224, 0.5);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25px
 }
 
 #projects img {
@@ -222,7 +272,7 @@ strong {
 }
 
 .heading {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
   text-align: center;
   text-decoration: underline;
 }
@@ -264,6 +314,8 @@ strong {
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-around;
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(15%, 4fr));;
 }
 
 /* Article 4 */
@@ -305,7 +357,7 @@ h3, input[type=submit] {
 } 
 
 #contactForm, form {
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   width: 90%;
 }
 
@@ -339,6 +391,7 @@ input:focus, textarea:focus {
   border: 5px solid #891652;
   background-color: lightcyan;
   color: #000;
+  padding: 0.5em;
 }
 
 input[type=submit] {
@@ -396,28 +449,6 @@ a:hover {
 #formRight, #formLeft {
   flex-direction: column;
 }
-@media (max-width: 650px) {
-  #container  {
-      display: flexbox !important;
-      max-width: 100% !important;
-      flex-direction: row !important;
-      flex-grow: inherit !important;
-      flex-grow: initial;
-      flex-wrap: wrap;
-  }
-
-  #container #left, #container #right{
-      width: fit-content;
-  }
-}
-
-@media (min-width: 767px) {
-  #left, #right {
-      /* width: 50%; */
-  
-  }
-  
-} 
 
 
 /* ----------------------------------------------
@@ -496,7 +527,20 @@ a:hover {
 @media only screen and (min-width: 640px) {
   #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 2fr));
+  }
+
+  #container  {
+    display: flexbox !important;
+    max-width: 100% !important;
+    flex-direction: row !important;
+    flex-grow: inherit !important;
+    flex-grow: initial;
+    flex-wrap: wrap;
+  }
+
+  #container #left, #container #right{
+      width: 90%;
   }
 }
 

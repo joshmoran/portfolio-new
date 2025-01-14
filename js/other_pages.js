@@ -1,22 +1,22 @@
-// // alert( window.innerWidth );
+// alert( window.innerWidth );
+alert(url);
+let header = document.getElementById('header');
+let container = document.getElementById('container');
+let footer = document.getElementById('footer');
 
-// let header = document.getElementById('header');
-// let container = document.getElementById('container');
-// let footer = document.getElementById('footer');
+let headerHeight = header.offsetHeight;
+let windowHeight = window.innerHeight;
+let containerHeight = container.offsetHeight;
+let footerHeight = footer.offsetHeight;
 
-// let headerHeight = header.offsetHeight;
-// let windowHeight = window.innerHeight;
-// let containerHeight = container.offsetHeight;
-// let footerHeight = footer.offsetHeight;
+// alert( header.offsetHeight );
+window.addEventListener('resize', changeDimentsions );
 
-// // alert( header.offsetHeight );
-// window.addEventListener('resize', changeDimentsions );
+window.addEventListener('load', changeDimentsions );
 
-// window.addEventListener('load', changeDimentsions );
+function changeDimentsions() {
+    container.style.marginTop = Number( headerHeight + 50) + 'px';
+    container.style.marginBottom = Number( footerHeight - 55 ) + 'px';
+    header.style.top = 0;
 
-// function changeDimentsions() {
-//     container.style.marginTop = Number( headerHeight + 50) + 'px';
-//     container.style.marginBottom = Number( footerHeight - 55 ) + 'px';
-//     header.style.top = 0;
-
-// }
+}

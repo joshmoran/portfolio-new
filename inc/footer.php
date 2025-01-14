@@ -20,4 +20,13 @@ if ( $file =='moredetails.php'){
     </ul>
 </div>
 
-<script src="../js/other_pages.js"></script>
+
+
+<?php 
+
+if ( $file != 'index.php' ) {
+    echo '<script src="../js/other_pages.js"></script>';
+} 
+
+?>
+<!-- <script src="../js/other_pages.js"></script> -->

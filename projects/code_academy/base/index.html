@@ -1,0 +1,492 @@
+<!-- 
+Semantic Elements 
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Code Academy</title>
+</head>
+<body>
+    <div id="container" class="flex column">
+        <header>
+            <div id="banner">
+                <h3>PRO SALE: Get 50% off annual Pro memberships with code <br ><a href="#">UPSKILLNOW</a></h3>
+                <button class="bannerClose flex"><img src="images/sprites/xmark-solid.svg" alt="Close Button" ></button>
+            </div>
+            <nav class="flex row">
+                <div class="navLeft flex left row">
+                    <img class="logo" src="images/logo.png" alt="Code Academy Logo">
+                </div>
+                <div class="navRight flex right">
+                    <img class="searchIcon" src="images/sprites/magnifying-glass-solid.svg" alt="Close Button"> 
+                    <a class="loginNav" id="login">Log In</a>
+                    <a class="signupNav" id="signup">Sign Up</a>
+                    <button id="subnav"><img class="menu" src="images/sprites/bars-solid.svg" alt="Open Menu"></button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article id="article1" class="flex column">
+                <div id="carousel" class="left">
+                    <svg fill="currentColor" role="img" aria-hidden="true" class="carouselSvg"><title>Grid Regular</title><pattern id="GridRegular-pattern-:R1hbdb9l6:" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="currentColor"></rect><rect y="4" width="1" height="1" fill="currentColor"></rect><rect x="4" width="1" height="1" fill="currentColor"></rect><rect x="4" y="4" width="1" height="1" fill="currentColor"></rect></pattern><rect width="100%" height="100%" fill="url(#GridRegular-pattern-:R1hbdb9l6:)"></rect></svg>
+                    <p id="carouselTitle"><span>THE NEXT GENERATION OF LEARNING</span></p>
+                    <img id="carouselBackground" alt="Carousel Background Image Number One" src="images/sections/article2/carousel.svg">
+                    <p class="flex row" id="carouselText1"><img class="plus" src="images/sprites/plus-solid.svg" alt="A plus sign"><span>Build skills quikcer with AI assistance</span></p>
+                    <p class="flex row" id="carouselText2"><img class="plus" src="images/sprites/plus-solid.svg" alt="A plus sign"><span>Gain Experience with modern developer tools</span></p>
+                    <div id="carouselBtns">
+                        <p><img id="carouselBtn1" src="images/sprites/circle.svg" alt="A filled black circle"></p>
+                        <p><img id="carouselBtn2" src="images/sprites/circle_hollow.svg" alt="A hollow circle"></p>
+                        <p><img id="carouselBtn3" src="images/sprites/circle_hollow.svg" alt="A hollow circle"></p>
+                        <p><img id="carouselBtn4" src="images/sprites/circle_hollow.svg" alt="A hollow circle"></p>
+                        <p><img id="carouselBtn5" src="images/sprites/circle_hollow.svg" alt="A hollow circle"></p>
+                    </div>
+                </div>
+                <!--  Signup Form -->
+                <div id="article1Form" class="right twcCols column">
+                    <h1>Join the millions learning to code with Codeacademy for free</h1>
+                   
+                    <form class="flex column" id="form" action="#" method="POST">
+                        <p>* Required</p>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="myemail@emailprovider.com">
+
+                        <label for="password">Password* </label>
+                        <div id="passwordRequirments">
+                            <p>Make sure your password is at least 8 characters and contains:</p>
+                            <uL>
+                                <li>At least 1 uppercase letter and 1 lowercase letter</li>
+                                <li>At least 1 number</li>
+                                <li>At least 1 special character like @#%^)</li>
+                            </uL>
+                            <p>Avoid common passwords or strings like 'password', 'qwerty' or '12345'.</p>
+                        </div>
+                        <input type="password" id="password" name="password">
+                        <input id="formSubmit" type="submit" title="Sign Up" value="Sign Up">
+                        <p id="formTNC" >By signing up, you agree to the Codeacademy <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                        <h2 id="providerLinks">Or sign up using:</h2>
+                        <div id="signupProviders" class="flex row">
+                            <a href="#"><img src="images/providers/google.webp" alt="Google Logo"></a>
+                            <a href="#"><img src="images/providers/facebook.png" alt="Facebook Logo"></a>
+                            <a href="#"><img src="images/providers/github.png" alt="GitHub Logo"></a>
+                            <a href="#"><img src="images/providers/apple.webp" alt="Apple Logo"></a>
+
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article id="article2" class="flex column">
+                <svg id="article2svg" fill="currentColor" role="img" aria-hidden="true" class="gamut-uwwqev e3tf18d0"><title>Dot Loose</title><pattern id="DotLoose-pattern-:R29rdb9l6:" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="0.5" height="0.5" fill="currentColor"></rect><rect y="1" width="0.5" height="0.5" fill="currentColor"></rect><rect y="0.5" width="0.5" height="0.5" fill="currentColor"></rect><rect x="1" width="0.5" height="0.5" fill="currentColor"></rect><rect x="1" y="1" width="0.5" height="0.5" fill="currentColor"></rect><rect x="1" y="0.5" width="0.5" height="0.5" fill="currentColor"></rect><rect x="0.5" width="0.5" height="0.5" fill="currentColor"></rect><rect x="0.5" y="1" width="0.5" height="0.5" fill="currentColor"></rect><rect x="0.5" y="0.5" width="0.5" height="0.5" fill="currentColor"></rect></pattern><rect width="100%" height="100%" fill="url(#DotLoose-pattern-:R29rdb9l6:)"></rect></svg>
+                <div id="article2container">
+                    <div class="twoCols">
+                        <h1>Find what's right for you</h1>
+                        <p>Answer 3 quick questions to get a recommendations that match your interests.</p>
+                    </div>
+                    <div id="article2options" class="flex">
+                        <div id="article2btns" class="flex row">
+                            <p id="article2btn1">1</p>
+                            <p id="article2btn2">2</p>
+                            <p id="article2btn3">3</p>
+                        </div>
+                        <div id="options2">
+                            <h2>What do you want to learn about?</h2>
+                            <div id="article2Options" class="flex column">
+                                <a><p>Web Development</p></a>
+                                <a><p>Computer Science</p></a>
+                                <a><p>Artifical Intelligence</p></a>
+                                <a><p>Game Development</p></a>
+                                <a><p>Data Visualisation</p></a>
+                                <a><p>Data Science</p></a>
+                                <a><p>Web Design</p></a>
+                                <a><p>Machine Learning</p></a>
+                                <a><p>Mobile Development</p></a>
+                                <a><p>Not sure yet</p></a>
+                            </div>
+                        </div>
+                        <div id="picture2">
+                            <img class="article2picture" src="images/sections/article3/career-interest.svg" alt="A picture of a notebook and a pen">
+                            <p>We have hundreds of courses that cover just about everything</p>
+                        </div>
+                    </div>
+                </div>  
+            </article>
+            <article id="article3">
+                <p class="article3intro">Start Learning</p>
+                <h1 class="article3intro">Popular Courses</h1>
+                <div class="hide">
+                    <
+                </div>
+                <select id="courseSelect" name="whichCourse">
+                    <option value="intoToAI">AI</option>
+                </select>
+                <div id="article3list">
+                    <!-- Item 1 -->
+                    <div class="article3item flex column">
+                        <div id="twoCols">
+                            <p class="freeCourse">Free Course</p>
+                            <h3>Intro to Generative AI</h3>
+                            <p class="article3Description">Dive into the many forms of generative AI and learn how we can best use these new technologies</p>
+                        </div>
+                        <div class="article3detail flex row">
+                            <div>
+                                <p><svg class="difficulty" xmlns="http://www.w3.org/2000/svg" viewBox="0.25 0.25 13.5 13.5" style="background-color:transparent" fill="#fff" role="img" aria-hidden="true"><mask><path d="M4.975 7.45H1.15v5.4h3.825m4.05-8.1h-4.05v8.1h4.05m0-11.7h3.825v11.7H9.025z" stroke-width="0.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path></mask><g><rect width="100%" height="100%" fill="currentColor"></rect></g></svg><strong>Beginner</strong> <span>Friendly</span>
+                                </p>  
+                            </div>
+                            <div>
+                                <p>&lt; 1 hour</p>
+                            </div>                             
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="article3item flex column">
+                        <div class="twoCols">
+                            <p class="freeCourse">Free Course</p>
+                            <h3>Learn How to Use ChatGPT</h3>
+                            <p class="article3Description">Ready to dive into the world of Generative AI? Learn how ChatGPT works, how to use ChatGPT in your everyday life, and how to write effective ChatGPT prompts.</p>
+                        </div>
+                        <div class="article3detail flex row">
+                            <div>
+                                <p><svg class="difficulty" xmlns="http://www.w3.org/2000/svg" viewBox="0.25 0.25 13.5 13.5" style="background-color:transparent" fill="#fff" role="img" aria-hidden="true"><mask><path d="M4.975 7.45H1.15v5.4h3.825m4.05-8.1h-4.05v8.1h4.05m0-11.7h3.825v11.7H9.025z" stroke-width="0.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path></mask><g mask="url(#LevelIcon-mask-:R9jekqkqmqd8qkqiibdb9l6:)"><rect width="100%" height="100%" fill="currentColor"></rect></g></svg><strong>Beginner</strong> <span>Friendly</span> 
+                                </p>  
+                            </div>
+                            <div>
+                                <p>1 hour</p>
+                            </div>                             
+                        </div>
+                    </div>
+                     <!-- Item 3 -->
+                     <div class="article3item flex column">
+                        <div class="twoCols">
+                            <p class="freeCourse">Free Course</p>
+                            <h3>Learn How to Use AI for Coding</h3>
+                            <p class="article3Description">Ready to learn how to use AI for coding? Learn how to use generative AI tools like ChatGPT to generate code and expedite your development.</p>
+                        </div>
+                        <div class="article3detail flex row">
+                            <div>
+                                <p><svg class="difficulty" xmlns="http://www.w3.org/2000/svg" viewBox="0.25 0.25 13.5 13.5" style="background-color:transparent" fill="#fff" role="img" aria-hidden="true"><mask><path d="M4.975 7.45H1.15v5.4h3.825m4.05-8.1h-4.05v8.1h4.05m0-11.7h3.825v11.7H9.025z" stroke-width="0.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path></mask><g mask="url(#LevelIcon-mask-:R9jekqkqmqd8qkqiibdb9l6:)"><rect width="100%" height="100%" fill="currentColor"></rect></g></svg><strong>Beginner</strong> <span>Friendly</span> 
+                                </p>  
+                            </div>
+                            <div>
+                                <p>1 hour</p>
+                            </div>                             
+                        </div>
+                    </div>
+                    <!-- Item 4  -->
+                    <div class="article3item flex column">
+                        <div class="twoCols">
+                            <p class="careerCourse">Career Path</p>
+                            <h3>Machine Learning/AI Engineer</h3>
+                            <p class="article3CareerDescription">Machine Learning/AI Engineers build end-to-end ML applications and power many of the apps we use every day. They work in Python, Git, &amp; ML.</p>
+                        </div>
+                        <div class="flex column itemDetailed">
+                            <div class="flex row">
+                                <span>Includes <strong>7 Courses</strong></span>
+                            </div>
+                            <div class="flex row">
+                                <span>With Certitifcate</span>
+                            </div>
+                            <div class="flex row detailedRow">
+                                <div>
+                                    <svg class="difficulty" xmlns="http://www.w3.org/2000/svg" viewBox="0.25 0.25 13.5 13.5" style="background-color:transparent" fill="#fff" role="img" aria-hidden="true"><mask><path d="M4.975 7.45H1.15v5.4h3.825m4.05-8.1h-4.05v8.1h4.05m0-11.7h3.825v11.7H9.025z" stroke-width="0.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path></mask><g mask="url(#LevelIcon-mask-:R9jekqkqmqd8qkqiibdb9l6:)"><rect width="100%" height="100%" fill="currentColor"></rect></g></svg><strong>Intermediate</strong>
+                                </div>
+                                <div>
+                                    <p>50 hours</p>
+                                </div>  
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div id="article3moreinfo" class="flex row">
+                    <a href="#" class="exploreCatalog flex row"><span>Explore full catalog</span><img class="article4img" src="images/sprites/arrow-right.svg" alt="Right arrow"></a>
+                </div>
+                <div id="article3other" class="flex column">
+                    <div><h2>Free</h2></div>
+                    <div><h2>New to coding</h2></div>
+                    <div><h2>Most Popular</h2></div>
+                    <div><h2>Skill Paths</h2></div>
+                    <div><h2>Career Paths</h2></div>
+                </div>
+            </article>
+            <article id="article4">
+                <div class="flex column article4intro">
+                    <p class="article4intro">The Platform</p>
+                    <h1 class="article4intro">Hand-on Learning</h1>
+                    <div id="article4Content" class="flex column">
+                        <div>
+                            <img class="article4img" src="images/sections/article4/image.png" alt="Our learning platform">
+                        </div>
+                        <div id="article4list" class="flex column">
+                            <div class="article4item">
+                                <h2>AI-assisted learning</h2>
+                                <p>Make progress faster with our AI Learning Assistant, a tool that automatically understands your current course, instructions, and solution code — and gives you instant, personalized feedback.</p>
+                            </div>
+                            <div class="article4item">
+                                <h2>Real-world projects</h2>
+                                <p class="hide">Take what you're learning into the real world. Choose from guided projects that help you solidify new concepts — or test yourself with independent projects designed to build your portfolio.</p>
+                            </div>
+                            <div class="article4item">
+                                <h2>Job-readiness checker</h2>
+                                <p class="hide">See how well your skills and experience meet the requirements for jobs you're interested in. AI generates a personalized report to show you how ready you are for your dream job and where to improve to qualify for a role.</p>
+                            </div>
+                            <div class="article4item">
+                                <h2>Interview simulator</h2>
+                                <p class="hide">Use AI to identify strengths and get personalized, actionable feedback to improve your interviewing skills. Easily see what's needed to improve your skills — no matter what stage you're at in your career.</p>
+                            </div>
+                            <div class="article4item">
+                                <h2>Assessments</h2>
+                                <p class="hide">Test new skills as you learn them so you can better understand and apply new concepts. You'll also see which topics need more review and get practice recommendations to continue to improve.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article4extrainfo" class="flex row">
+                        <a class="article4getstarted" href="#">Get Started</a>
+                        <a class="article4explore" href="#">Explore Features</a>
+                    </div>
+                </div>
+            </article>
+            <article id="article5" class="flex column">
+                <div class="flex column">
+                    <img class="article5img" src="images/sections/article5/image.webp" alt="Our job ready checker">
+    
+                </div>
+                <div id="article5info" class="flex column">
+                    <p>Powered by AI</p>
+                    <h2>Job-readiness checker</h2>
+                    <p id ="article5description">See how well your skills and experience match the job postings you’re interested in. Our job-readiness checker uses artificial intelligence to show you what you need to work on to qualify for a role.</p>
+                    <button>Try it out</button>
+                </div>
+            </article>
+            <article id="article6" class="flex column">
+                <div id="article6intro" class="flex column">
+                    <h1 class="flex row" ><img src="images/logo.png" alt="Code Academy Teams Logo"> <span>TEAMS</span></h1>
+                    <h1>Equip your team with skills for today - and tomorrow</h1>
+                    <p>Reach business and professional goals with technical training for your while team</p>
+                    <button>Explore business plans</button>
+                </div>
+                <div id="article6logos">
+                    <img src="images/providers/airbnb.png" alt="Airbnb logo">
+                    <img src="images/providers/amazon.png" alt="Amazon logo">
+                    <img src="images/providers/dailymotion.png" alt="Dailymotion Logo">
+                    <img src="images/providers/reverb.png" alt="Reverb logo">
+                </div>
+            </article>
+            <article id="article7" class="flex column">
+                <div id="article7intro" class="flex column">
+                    <h1>Stories from real people</h1>
+                    <p>Read inspiring stories from the Codeacademy community.</p>
+                </div>
+                <div id="article7people" class="flex column">
+                    <div class="storiesChildren flex column">
+                        <img src="images/stories/0.jpeg" alt="De 'Shaun B.">
+                        <h2>Freelancer to Developing Apps</h2>
+                        <p>De 'Shaun B., Associate</p>
+                        <p>Software Engineer, Winter Park</p>
+                    </div>
+                    <div class="storiesChildren flex column">
+                        <img src="images/stories/1.jpeg" alt="De 'Shaun B.">
+                        <h2>Lessons from a Product Owner turned Engineer</h2>
+                        <p>Serena I., Software Developer</p>
+                        <p>@ Adidas, South Holland</p>
+                    </div>
+                    <div class="storiesChildren flex column">
+                        <img src="images/stories/2.jpeg" alt="De 'Shaun B.">
+                        <h2>From Film to Full-Stack Engineer in 11 Months</h2>
+                        <p>Julia J., Ruby on Rails</p>
+                        <p>Software Engineer, Winter Park</p>
+                    </div>
+                    <div class="storiesChildren flex column">
+                        <img src="images/stories/3.jpeg" alt="De 'Shaun B.">
+                        <h2>Technical Analyst to Front-End Engineer in 6 Months</h2>
+                        <p>Christian T., Front End Software Engineer</p>
+                        <p>Winter Park</p>
+                    </div>
+                </div>
+                <a class="moreStories flex row " href="#"><span>Explore more stories</span><img class="article7arrow" src="images/sprites/arrow-right.svg" alt="Arrow for more stories"></a>
+            </article>
+            <article id="article8" class="flex row">
+                <div id="article8intro" class="left twoCols colunn">
+                    <p>Join in on something big</p>
+                </div>
+                <div class="right article8details flex column">
+                    <div class="flex column">
+                        <h1>50M</h1>
+                        <p>Learners</p>
+                    </div>
+                    <div class="flex column">
+                        <h1>190+</h1>
+                        <p>Countries</p>
+                    </div>
+                    <div class="flex column">
+                        <h1>3.7B</h1>
+                        <p>Code Submits</p>
+                    </div>
+                </div>
+            </article>
+            <article id="article9" class="flex row">
+                <div class="flex row">
+                    <img class="article9img" src="images/sections/article9/1.png" alt="Individuals learning to code">
+                    <img class="article9img hide" src="images/sections/article9/2.png" alt="Individuals learning to code">
+                </div>
+                <div class="flex column article9column">
+                    <h1>Start for free</h1>
+                    <p>If you've made it this far, you must be at least a little curious. Sign up and take the first step toward your goals.</p>
+                    <a href="#">Sign Up</a>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div id="links">
+                <div id="footerOne">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+
+                    <div id="footerProvider">
+                        <!-- Providers / third party -->
+                        <img src="images/providers/twitter.svg" alt="Twitter Logo">
+                        <img src="images/providers/facebook.svg" alt="Facebook Logo">
+                        <img src="images/providers/instagram.svg" alt="Twitter Logo">
+                        <img src="images/providers/youtube.svg" alt="You Tube Logo">
+                        <img src="images/providers/tiktok.svg" alt="TikTok Logo">
+                    </div>
+
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Cheetsheets</a></li>
+                        <li><a href="#">Code challengers</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Workspaces </a></li>
+                    </ul>
+
+
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div id="footerTwo">
+                    <h3>Plans</h3>
+                    <ul>
+                        <li><a href="#">For individuals</a></li>
+                        <li><a href="#">For students</a></li>
+                        <li><a href="#">For business</a></li>
+                        <li><a href="#">Discounts</a></li>
+                    </ul>
+
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">Code Crew</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Learner Stories</a></li>
+                        <li><a href="#">Students Beans</a></li>
+                    </ul>
+                    <img class="footerLogo" src="images/logo.png" alt="CodeAcademy Logo">
+                </div>
+                <div id="footerThree">
+                    <h3>Subjects</h3>
+                    <ul>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Code Foundations</a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Data Analystics</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Data Visualisation</a></li>
+                        <li><a href="#">Developer Tools</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">IT</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Math</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+                <div id="footerFour">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><a href="#">Bash</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Go</a></li>
+                        <li><a href="#">HTML & CSS</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Kotlin</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">R</a></li>
+                        <li><a href="#">Ruby</a></li>
+                        <li><a href="#">SQL</a></li>
+                        <li><a href="#">Swift</a></li>
+                    </ul>
+                </div>
+                <div id="footerFive">
+                    <h3>Career building</h3>
+                    <ul>
+                        <li><a href="#">Career paths</a></li>
+                        <li><a href="#">Career center</a></li>
+                        <li><a href="#">Interview prep</a></li>
+                        <li><a href="#">Professional certification</a></li>
+                        <li><a href="#">Compare to bootcamps</a></li>
+                        <li><a href="#">---</a></li>
+                        <li><a href="#">Full Catalog</a></li>
+                        <li><a href="#">Beta Catalog</a></li>
+                        <li><a href="#">Road Map</a></li>
+                    </ul>
+                </div>
+                <div id="footerSix">
+                    <h3>Mobile</h3>
+                    <ul>
+                        <li><a href="#" class="store"><img src="images/sprites/getOnAppleStore.png" alt="Get the app on Apple Store"></a></li>
+                        <li><a href="#" class="store"><img src="images/sprites/getOnPlayStore.webp" alt="Get the app on Google Play Store"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="tandc" class="flex row">
+                <a href="#">Privacy Policy</a>
+                <p>|</p>
+                <a href="#">Cookie Policy</a>
+                <p>|</p>
+                <a href="#">Do Not Sell My Personal Information</a>
+                <p>|</p>
+                <a href="#">Terms</a>
+            </div>
+            <div id="copyright">
+                <p>�� 2021 CodeAcademy. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
