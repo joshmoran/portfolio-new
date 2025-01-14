@@ -171,7 +171,7 @@ if ( !isset( $_GET['message']) ) {
                 </div>
                 <div class="logoContainer">
                     <img src="img/languages/node.svg" alt="NodeJS Logo">
-                    <h3>NodeJS</h3>0
+                    <h3>NodeJS</h3>
                 </div>
                 <div class="logoContainer">
                     <img src="img/languages/python.svg" alt="Python Logo">
@@ -312,8 +312,8 @@ if ( !isset( $_GET['message']) ) {
             <h2 class="heading">Qualifications</h2>
             <div class="flex row">
                 <div class="logoContainer">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b3728c6-b2c6-477e-8a55-2f7c4592a79b" data-share-badge-host="https://www.credly.com"></div><script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <h3>CompTIA A+</h3>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b3728c6-b2c6-477e-8a55-2f7c4592a79b" data-share-badge-host="https://www.credly.com">
+                        <h2>CompTIA A+</h2><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script></div>
                 </div>
                 <div class="logoContainer">
                     <img class="qualifications" src="img/qualifications/ms900.png" alt="Microsoft 365 Fundamentals Logo">
@@ -351,10 +351,10 @@ if ( !isset( $_GET['message']) ) {
         <label for="message">Message</label>
     </div>
     <div id="formRight" class="flex column">
-        <input type="text" id="name" name="name" placeholder="John Smith" required>
-        <input type="email" id="email" name="email" placeholder="johnsmith@provider.co.uk" required>
-        <input type="text" id="subject" name="subject" placeholder="Information and advice" required>
-        <textarea id="message" name="message" placeholder="I am in need of a website developed for my business. Is this something you can do? Looking forward to hearing from you soon." required></textarea>
+        <input type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required>
+        <input type="email" id="email" name="email" placeholder="johnsmith@provider.co.uk" autocomplete="email" required>
+        <input type="text" id="subject" name="subject" placeholder="Information and advice" autocomplete="subject" required>
+        <textarea id="message" name="message" placeholder="I am in need of a website developed for my business. Is this something you can do? Looking forward to hearing from you soon." autocomplete="message" required></textarea>
         <input type="submit" value="Submit">
     </div>
     </div>
