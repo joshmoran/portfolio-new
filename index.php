@@ -19,19 +19,19 @@ if ( !isset( $_GET['message']) ) {
   $error_message = '';
 } else {
   if ( $_GET['message'] == 'sent' ) {
-    $error_message = 'Message sent!';
+    $error_message = 'Message sent!';#
   }
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Josh Kelly's Portfolio</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- <link rel="stylesheet" type="text/css" href="css/universal.css" /> -->
     
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     
@@ -39,13 +39,12 @@ if ( !isset( $_GET['message']) ) {
         include "inc/header.php";
     ?>
     <div id="container" class="flex row">
-        <hr>
         <div class="contentRow parallax" id="article1">
             <div id="intro">
-                <div id="left">
-                    <img src="img/cover_photo.jpg" class="profilePhoto" alt="" />
+                <div class="left">
+                    <img src="img/cover_photo.jpg" class="profilePhoto" alt="My Profile Picture">
                 </div>
-                <div id="right">
+                <div class="right">
                     <h2>Front and Backend Developer</h2>
                     <p>Helping clients <span>develop</span>, <span>build</span> and <span>deploy</span> your digital products</p>
                     <a class="cvLink clickable" href="src/cv.pdf" target="_parent">Download My CV</a>
@@ -58,10 +57,10 @@ if ( !isset( $_GET['message']) ) {
             <!-- Projects -->
             <div id="projects">
                 <div class="itemProject">
-                    <div id="left">
-                        <img src="img/ticket_system.png" class="projectsImg" alt="" />
+                    <div class="left">
+                        <img src="img/ticket_system.png" class="projectsImg" alt="Ticket System Project">
                     </div>
-                    <div id="right">
+                    <div class="right">
                         <div class="projectInfo">
                             <h2>Ticket System</h2>
                             <p>A website designed for managing, organizing and resolving tickets.</p>
@@ -77,10 +76,10 @@ if ( !isset( $_GET['message']) ) {
                     </div>
                 </div>
                 <div class="itemProject">
-                    <div id="left">
-                        <img src="img/todo_flask.png" class="projectsImg" alt="" />
+                    <div class="left">
+                        <img src="img/todo_flask.png" class="projectsImg" alt="ToDo Application Project Using Flask Framework">
                     </div>
-                    <div id="right">
+                    <div class="right">
                         <div class="projectInfo">
                             <h2>ToDo List</h2>
                             <p>A simple task management system.</p>
@@ -95,10 +94,10 @@ if ( !isset( $_GET['message']) ) {
                     </div>
                 </div>
                 <div class="itemProject">
-                    <div id="left">
-                        <img src="img/claires.png" class="projectsImg" alt="" />
+                    <div class="left">
+                        <img src="img/claires.png" class="projectsImg" alt="Claries Bakery Project">
                     </div>
-                    <div id="right">
+                    <div class="right">
                         <div class="projectInfo">
                             <h2>Cakeaholics by Claire</h2>
                             <p>A website designed for a local business in the north east england.</p>
@@ -113,10 +112,10 @@ if ( !isset( $_GET['message']) ) {
                     </div>
                 </div>
                 <div class="itemProject">
-                    <div id="left">
-                        <img src="img/angelas_website.jpg" class="projectsImg" alt="" />
+                    <div class="left">
+                        <img src="img/angelas_website.jpg" class="projectsImg" alt="Angelas Website Project">
                     </div>
-                    <div id="right">
+                    <div class="right">
                         <div class="projectInfo">
                             <h2>Angela's Website</h2>
                             <p>A e-commerce website.</p>
@@ -135,7 +134,6 @@ if ( !isset( $_GET['message']) ) {
             <a class="seeMore clickable" href="projects.php">See All My Work</a>
 
         </div>
-        <hr>
         <div class="contentRow parallax" id="article3">
             <div id="article3content">
             <h2 class="heading">Introduction</h2>
@@ -150,47 +148,47 @@ if ( !isset( $_GET['message']) ) {
             <h2 class="heading">Programming Languages:</h2>
             <div class="flex row logoDiv">
                 <div class="logoContainer">
-                    <img src="img/languages/html5.svg" alt="HTML5 Logo" />
+                    <img src="img/languages/html5.svg" alt="HTML5 Logo">
                     <h3>HTML5</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/css3-alt.svg" alt="CSS3 Logo" />
+                    <img src="img/languages/css3-alt.svg" alt="CSS3 Logo">
                     <h3>CSS3</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/js.svg" alt="JavaScript Logo" />
+                    <img src="img/languages/js.svg" alt="JavaScript Logo">
                     <h3>JavaScript</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/jquery.svg" alt="JQuery Logo" />
+                    <img src="img/languages/jquery.svg" alt="JQuery Logo">
                     <h3>JQuery</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/react.svg" alt="ReactJS Logo" />
+                    <img src="img/languages/react.svg" alt="ReactJS Logo">
                     <h3>ReactJS</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/node.svg" alt="NodeJS Logo" />
-                    <h3>NodeJS</h3>
+                    <img src="img/languages/node.svg" alt="NodeJS Logo">
+                    <h3>NodeJS</h3>0
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/python.svg" alt="Python Logo" />
+                    <img src="img/languages/python.svg" alt="Python Logo">
                     <h3>Python</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/flask.svg" alt="Flask Logo" />
+                    <img src="img/languages/flask.svg" alt="Flask Logo">
                     <h3>Flask</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/php.svg" alt="PHP Logo" />
-                    <h3>PHP</h2>
+                    <img src="img/languages/php.svg" alt="PHP Logo">
+                    <h3>PHP</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/sql.svg" alt="SQL Logo" />
+                    <img src="img/languages/sql.svg" alt="SQL Logo">
                     <h3>SQL</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/languages/json.svg" alt="JSON Logo" />
+                    <img src="img/languages/json.svg" alt="JSON Logo">
                     <h3>JSON</h3>
                 </div>
 
@@ -216,15 +214,15 @@ if ( !isset( $_GET['message']) ) {
             <h2 class="heading">Operating Systems </h2>
             <div class="flex row logoDiv">
                 <div class="logoContainer">
-                    <img src="img/operatingsystems/windows.svg" alt="Windows Logo" />
+                    <img src="img/operatingsystems/windows.svg" alt="Windows Logo">
                     <h3>Windows</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/operatingsystems/linux.svg" alt="Linux Logo" />
+                    <img src="img/operatingsystems/linux.svg" alt="Linux Logo">
                     <h3>Linux</h3>
                 </div>
                 <div class="logoContainer">
-                    <img src="img/operatingsystems/debian.svg" alt="Debian Logo" />
+                    <img src="img/operatingsystems/debian.svg" alt="Debian Logo">
                     <h3>Debian</h3>
                 </div>
             </div>
@@ -312,7 +310,7 @@ if ( !isset( $_GET['message']) ) {
             <h2 class="heading">Qualifications</h2>
             <div class="flex row">
                 <div class="logoContainer">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b3728c6-b2c6-477e-8a55-2f7c4592a79b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b3728c6-b2c6-477e-8a55-2f7c4592a79b" data-share-badge-host="https://www.credly.com"></div><script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                     <h3>CompTIA A+</h3>
                 </div>
                 <div class="logoContainer">
@@ -326,11 +324,11 @@ if ( !isset( $_GET['message']) ) {
 <h2>Contact Methods</h2>
 <div id="contactMethod">
 <ul class="contactLinks">
-    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>Email: </span><img src="/img/footer/pngkey.com-mail-white-png-4297053.png" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li>
-    <li><a class="contactClickable" href="https://www.codecademy.com/profiles/method7207366434" target="_blank"><span>CodeAcademy: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li>
+    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>Email: </span><img src="/img/footer/pngkey.com-mail-white-png-4297053.png" alt="Contact Me By Email" class="contactMethod" /></a></li>
+    <li><a class="contactClickable" href="https://github.com/joshmoran" target="_blank"><span>GitHub: </span><img src="/img/footer/github.svg" class="contactMethod" alt="Contact Me By GitHub" /></a></li>
+    <li><a class="contactClickable" href="https://teamtreehouse.com/profiles/joshkelly4" target="_blank"><span>TeamTreeHouse: </span><img src="/img/footer/treehouse.png" class="contactMethod" alt="Contact Me By TeamTreehouse" /></a></li>
+    <li><a class="contactClickable" href="mailto:josh@lovingfamily.co.uk" target="_blank"><span>LinkedIn: </span><img src="/img/footer/linkedin.svg" class="contactMethod" alt="Contact Me By LinkedIn" /></a></li>
+    <!-- <li><a class="contactClickable" href="https://www.codecademy.com/profiles/method7207366434" target="_blank"><span>CodeAcademy: </span><img src="/img/footer/linkedin.svg" class="contactMethod" /></a></li> -->
 </ul>
 </div>
 <div id="contactForm">
@@ -361,10 +359,12 @@ if ( !isset( $_GET['message']) ) {
 
     
 </form>
-</div><?php
+</div>
+</div>
+</div>
+<?php
     include "inc/footer.php";
     ?>
-</div>
 
 
     

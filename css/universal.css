@@ -45,15 +45,30 @@ body::after {
 }
 
 #container {
+   
+  top: 20vh;
+  /* padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-top: 2vh solid lightcoral; */
+
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
     width: 80%;
     background-color: rgba(36, 10, 52, 0.90);
     /* background-color: #000; */
-    margin: 10vh auto;
+    /* margin: 10vh auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5em 1.5em;
+    /* padding: 0.5em 1.5em; */
     border-radius: 20px;
     border: 1px solid whitesmoke;
     border-top-width: 5px;

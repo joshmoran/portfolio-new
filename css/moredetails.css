@@ -1,7 +1,7 @@
 #container {
     flex-direction: column !important;
     width: 80%;
-    margin: 0 auto;
+    margin: 13rem auto 2rem auto;
 }
 
 * { 

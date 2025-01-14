@@ -1,5 +1,6 @@
 #container {
     flex-direction: column !important;
+    margin: 13rem auto 2rem auto;
 }
 
 #container > h2
