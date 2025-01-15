@@ -35,7 +35,7 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  border-top: 2vh solid lightcoral;
+  border-top: 1vh solid lightcoral;
 }
 
 /* HTML Selectors */
@@ -78,9 +78,9 @@ h2 + p, p + p {
 }
 
 #article2 strong {
-  font-weight: 2000;
-  color: darkslategrey;
-  /* border: 10px solid black./; */
+  font-weight: 300;
+  color: lightslategray;
+  text-decoration: underline;
 }
 
 #article3 strong {
@@ -129,12 +129,12 @@ h2 + p, p + p {
   max-width: 30em;
   height: fit-content;
   color: white;
-  background-color: rgba(36, 10, 52, 0.90);
+  background-color: rgba(36, 10, 52, 0.75);
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 15rem auto 10rem auto;
-  padding: 2rem 0;
+  margin: 8em auto 10em auto;
+  padding: 1em 0 2em 0 ;
   border: 2px solid white;
   border-radius: 25px;
   --webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -149,16 +149,52 @@ h2 + p, p + p {
 }
 
 #intro .right p, #intro .right a {
-  margin: 2em auto;
+  margin: 1em auto 2em auto;
   text-align: center;
 
 }
 
 .profilePhoto  {
-  width: 15em;
+  width: 90%;
   height: auto;
   border-radius: 60%;
   /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+}
+
+#quote * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#quote .author {
+  font-weight: 500;
+  font-style: revert-layer;;
+}
+
+.quoteText {
+  display: flex;
+  font-style: italic;
+  align-items: baseline;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.quoteText img {
+  width: 1em;
+  filter: invert(1);
+}
+
+.quoteText span {
+  width: 75%;
+}
+
+p.author {
+  margin: 1em !important;
+}
+
+#article1 hr {
+  width: 50%;
 }
 /* Article 2 */
 
@@ -198,6 +234,7 @@ background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(137,22,82,1) 66%);
 #projects {
   display: grid;
   flex-direction: row;
+  align-items: center;
   grid-template-columns: 1fr;
 }
 
@@ -212,20 +249,20 @@ background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(137,22,82,1) 66%);
 
 #projects > * {
   width: 90%;
-  height: fit-content;
+  height: -webkit-fill-available;
   margin: 0.75em auto;
   box-sizing: content-box;
-  background: rgba( 224,224, 224, 0.5);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 8px );
-  -webkit-backdrop-filter: blur( 8px );
+  background: rgba(224, 224, 224, 0.2);
+  box-shadow: 0 20px 50px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.4 );
+  border: 2px solid rgba(255, 255, 255, 0.4);
   padding: 0.5em;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  border-radius: 25px
+  border-radius: 25px;
 }
 
 #projects img {
@@ -289,6 +326,7 @@ background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(137,22,82,1) 66%);
   text-align: center;
   text-decoration: underline;
 }
+
 #article3content {
   background-color: black;
   padding: 2em;
@@ -300,6 +338,11 @@ background: radial-gradient(circle, rgba(34,34,34,1) 0%, rgba(137,22,82,1) 66%);
   backdrop-filter: blur( 9px );
   -webkit-backdrop-filter: blur( 9px );
   border-radius: 10px;
+}
+
+#article3content > p {
+  font-size: large !important;
+  text-align: justify;
 }
 
 #article3content * {

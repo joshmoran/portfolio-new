@@ -49,8 +49,12 @@
     display: inline-block;
 }
 
-#footer li a {
+.contactClickable {
     height: 100%;
     width: 100%;
+} 
 
-}
+.contactClickable:hover  {
+    --webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+  }

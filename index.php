@@ -46,7 +46,15 @@ if ( !isset( $_GET['message']) ) {
                 </div>
                 <div class="right">
                     <h2>Front and Backend Developer</h2>
-                    <p>Some more text </p>
+                    <div id="quote">
+                        <div class="quoteText">
+                            <img src="img/quote/quote-left.svg" alt="Left Quote Icon">
+                            <span>The beginning of knowledge is the discovery of something we do not understand.</span>
+                            <img src="img/quote/quote-right.svg" alt="Right Quote Icon">
+                        </div>
+                        <p class="author">Frank Herbert</p>
+                    </div>
+                    <hr>
                     <p>Helping clients <span>develop</span>, <span>build</span> and <span>deploy</span> your digital products</p>
                     <a class="cvLink clickable" href="src/cv.pdf" target="_parent">Download My CV</a>
                     <a class="contactMe clickable" href="#article4" target="_parent">Contact Me</a>
@@ -71,8 +79,8 @@ if ( !isset( $_GET['message']) ) {
                         <p><strong>Progress: </strong><br> Completed</p>
                         <div class="projectLinks">
                             <a class="clickable" href="projects/ticket_system/docs/moredetails.php">More Information</a>
-                            <a class="clickable" href="https://github.com/joshmoran/ticket-system-frontend" target="_blank">View on GitHub<br>-<br>Frontend</a>
-                            <a class="clickable" href="https://github.com/joshmoran/ticket-system-backend" target="_blank">View on GitHub<br>-<br>Backend</a>
+                            <a class="clickable" href="https://github.com/joshmoran/ticket-system-frontend" target="_blank">View Frontend on GitHub</a>
+                            <a class="clickable" href="https://github.com/joshmoran/ticket-system-backend" target="_blank">View Backend on GitHub</a>
                         </div>
                     </div>
                 </div>
