@@ -73,20 +73,16 @@ header a, .dropdown, .dropdown-content a  {
     flex-wrap: wrap;
 }
 
-.dropdown {
-
-}
-
 #headerRight {
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
 #headerRight #links { 
     display: grid;
     margin: 0 0 1em 0;
     width: 100%;
-    
     grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+    grid-gap: 0.5em;
 } 
 
 #links li {
@@ -153,7 +149,7 @@ header a, .dropdown, .dropdown-content a  {
     flex-direction: row !important;
   }
     #headerRight #links {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)) !important;
+      grid-template-columns: repeat(auto-fit, minmax(8em, 2fr)) !important;
     }
 }
 
