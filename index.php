@@ -221,8 +221,8 @@ if ( !isset( $_GET['message']) ) {
                 </div>
             </div> -->
             <br>
-            <h2 class="heading">Operating Systems </h2>
-            <div class="flex row logoDiv">
+            <h2 class="heading">Operating Systems</h2>
+            <div class="flex row logoDiv" id="osLogos">
                 <div class="logoContainer">
                     <img src="img/operatingsystems/windows.svg" alt="Windows Logo">
                     <h3>Windows</h3>
@@ -351,23 +351,11 @@ if ( !isset( $_GET['message']) ) {
     }
 ?>
 <form action="index.php" method="POST" >
-    <div id="formContent" class="flex row">
-    <div id="formLeft" class="flex column">
-        <label for="name">Name</label>
-        <label for="email">Email</label>
-        <label for="subject">Subject</label>
-        <label for="message">Message</label>
-    </div>
-    <div id="formRight" class="flex column">
-        <input type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required>
-        <input type="email" id="email" name="email" placeholder="johnsmith@provider.co.uk" autocomplete="email" required>
-        <input type="text" id="subject" name="subject" placeholder="Information and advice" autocomplete="subject" required>
-        <textarea id="message" name="message" placeholder="I am in need of a website developed for my business. Is this something you can do? Looking forward to hearing from you soon." autocomplete="message" required></textarea>
-        <input type="submit" value="Submit">
-    </div>
-    </div>
-
-    
+    <div><label for="name">Name</label><input type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required></div>
+    <div><label for="email">Email</label><input type="email" id="email" name="email" placeholder="johnsmith@provider.co.uk" autocomplete="email" required></div>
+    <div><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Information and advice" autocomplete="subject" required></div>
+    <div><label for="message">Message</label><textarea id="message" name="message" placeholder="I am in need of a website developed for my business. Is this something you can do? Looking forward to hearing from you soon." autocomplete="message" required></textarea></div>
+    <input type="submit" value="Submit">
 </form>
 </div>
 </div>

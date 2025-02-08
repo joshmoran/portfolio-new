@@ -82,7 +82,7 @@ header a, .dropdown, .dropdown-content a  {
     margin: 0 0 1em 0;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
-    grid-gap: 0.5em;
+    grid-gap: 1em;
 } 
 
 #links li {
