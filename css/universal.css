@@ -8,9 +8,15 @@
     line-height: 1.2;
 }
 
+.itemProject {
+    flex-direction: column;
+}
+
 #left img {
     border: 1px solid white;
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
 }
 .flex {
     display: flex;
@@ -83,11 +89,6 @@ body::after {
     opacity: 0.99;
 }
 
-@media screen and (min-width: 540px) {
-    #container {
-        /* flex-direction: row; */
-    }
-}
 
 #container {
     color: #ffedd8
@@ -96,6 +97,10 @@ body::after {
 @media screen and (min-width: 760px ) {
     #container {
         max-width: 700px;
+    }
+
+    .itemProject {
+        flex-direction: row;
     }
 }
 

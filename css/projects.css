@@ -62,15 +62,18 @@
 
 #right
 {
-    padding: 2em 0 1em 2em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-content: stretch;
     flex-wrap: nowrap;
-    height: 33em;
+    height: fit-content;
     justify-content: space-evenly;
+}
+
+#right > * {
+    margin: 0.5em;
 }
 
 h1, h2 { 
@@ -140,7 +143,7 @@ h1, h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 540px ) {
+@media screen and (min-width: 760px ) {
     .itemProject {
         flex-direction: row;
     }

@@ -468,7 +468,7 @@ form {
 
 form > div {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   display: grid;
   align-content: center;
   justify-content: flex-start;
@@ -530,7 +530,16 @@ a:hover {
   max-width: 800px;
 }
 
-.contactLinks li { 
+.contactLinks li {
+  list-style: none;
+  height: auto;
+  margin: 0.5em 0;
+  box-sizing: content-box;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+
+.contactLinks li a { 
   display: flex !important; 
   justify-content: space-between;
   margin: 0.5em;
@@ -538,17 +547,18 @@ a:hover {
   padding: 0 1em;
   border: 1px solid darkslategray;
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
-.contactLinks li:hover {
+.contactLinks li a:hover {
   background-color: #891652;
   color: white;
 }
-.contactLinks li:hover img {
+
+.contactLinks li a:hover img::after {
+
   filter: invert(1);
 }
-
-
 
 #messageSent {
   height: fit-content;
@@ -570,7 +580,6 @@ a:hover {
 #formRight, #formLeft {
   flex-direction: column;
 }
-
 
 
 @media screen and (min-width: 760px) {
@@ -601,7 +610,11 @@ a:hover {
     max-width: 900px !important;
   }
 
-  
+  .contactLinks li {
+    margin: 0.5em 1em;
+  }
+
+
   #container .left, #container .right{
       width: 90%;
   }
@@ -610,13 +623,19 @@ a:hover {
 @media screen and (min-width: 1280px) {
   #projects {
     display: grid;
-    max-width: 1280px !important;
     grid-template-columns: repeat(auto-fit, minmax(25%, 4fr)) !important;
   }
 
+  #projects, form {
+    max-width: 1280px !important;
+  }
   #contentRow {
     max-width: 1400px !important;
 
+  }
+
+  .contactLinks li {
+    margin: 0.5em 1em;
   }
 
   #contentRow > * {
