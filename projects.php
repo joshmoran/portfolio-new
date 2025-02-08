@@ -61,6 +61,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/todo_flask.png" class="projectsImg" alt="" />
@@ -77,6 +78,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/claires.png" class="projectsImg" alt="" />
@@ -93,6 +95,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/angelas_website.jpg" class="projectsImg" alt="" />
@@ -109,6 +112,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
 
         <!-- Task Section -->
         <h2 class="categoryTitle">Tasks</h2>
@@ -129,6 +133,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/weather.png" class="projectsImg" alt="Python Weather Task">
@@ -144,6 +149,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/quiz.png" class="projectsImg" alt="Quiz Task">
@@ -159,6 +165,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/music_playlist.png" class="projectsImg" alt="Python Music Playlist Task">
@@ -174,6 +181,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/expense_tracker.png" class="projectsImg" alt="Python Expense Tracker Task">
@@ -189,6 +197,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/code_academy.png" class="projectsImg" alt="Code Academy Landing Page Duplicate Project">
@@ -205,6 +214,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/calculator.png" class="projectsImg" alt="Calculator Project">
@@ -221,6 +231,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/tasks.jpg" class="projectsImg" alt="Tasks App">
@@ -237,6 +248,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/carousel.jpg" class="projectsImg" alt="Carousel Project">
@@ -253,6 +265,7 @@ function changeDimentsions() {
                 </div>
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/counter.jpg" class="projectsImg" alt="Counter Project">
@@ -269,6 +282,7 @@ function changeDimentsions() {
                 </div>  
             </div>
         </div>
+        <hr />
         <div class="itemProject">
             <div id="left">
                 <img src="img/raads-r.jpg" class="projectsImg" alt="" />
@@ -285,6 +299,7 @@ function changeDimentsions() {
                 </div>  
             </div>
         </div>
+        <hr />
     </div>
     <?php
     include "inc/footer.php";
