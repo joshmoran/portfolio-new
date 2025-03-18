@@ -30,7 +30,7 @@ if ( !isset( $_GET['message']) ) {
     <title>Josh Kelly's Portfolio</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- <link rel="stylesheet" type="text/css" href="css/universal.css" /> -->
-    
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -320,12 +320,17 @@ if ( !isset( $_GET['message']) ) {
             <h2 class="heading">Qualifications</h2>
             <div class="flex row">
                 <div class="logoContainer">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b3728c6-b2c6-477e-8a55-2f7c4592a79b" data-share-badge-host="https://www.credly.com">
-                        <h2>CompTIA A+</h2><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script></div>
-                </div>
-                <div class="logoContainer">
                     <img class="qualifications" src="img/qualifications/ms900.png" alt="Microsoft 365 Fundamentals Logo">
                     <h3>Microsoft 365 Fundamentals</h3>
+                </div>
+                <div class="logoContainer">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="41bde048-f406-4cde-b177-e8c141f2fe01" data-share-badge-host="https://www.credly.com"></div><h2>CompTIA A+</h2><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="logoContainer">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c181719-73ac-4b2d-be38-33c7cb6c35a4" data-share-badge-host="https://www.credly.com"></div><h2>CompTIA Network+</h2><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="logoContainer">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4ff17196-ce34-4e2e-a623-019d6fbcece4" data-share-badge-host="https://www.credly.com"></div><h2>CompTIA IT Operations Specialist</h2><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                 </div>
             </div>  
         </div>
